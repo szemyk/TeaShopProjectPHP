@@ -1,0 +1,1048 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/******************************************** STYLE DO NAGŁÓWKA *****************************************************/
+.header {
+    width: 100%;
+}
+
+.top {
+    margin-top: -1px;
+    margin-bottom: 10px;
+    background-color: #F2F2F2;
+    padding: 1px;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .top .container {
+    margin-bottom: 1px;
+}
+
+.header .top .container .row .info{
+    min-height: 39px;
+}
+
+.row{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header.top.row{
+    margin-right: 1px;
+    position: relative;
+}
+.info{
+    width: 70%;
+    float: left;
+}
+.contact_info{
+    min-height: 0;
+    margin: 0;
+    list-style: outside none none;
+    padding: 7px 1px;
+}
+
+.container .row .contact_info > li{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-right: 25px;
+    padding-left: 23px;
+    font-size: 13px;
+    color: #64573D;
+    text-transform: uppercase;
+    min-height: 25px;
+    padding-top: 5px;
+}
+
+#icon_phone{
+    background: transparent url("../picture/icon/icon_phone.png") no-repeat scroll left top;
+}
+
+#icon_30{
+    background: transparent url("../picture/icon/icon_30.png") no-repeat scroll left top;
+    padding-left: 33px;
+}
+
+#icon_truck{
+    background: transparent url("../picture/icon/icon_truck.png") no-repeat scroll left top;
+    padding-left: 33px;
+}
+
+/*************************************************** KOSZYK ********************************************************/
+.header .top .container .row{
+    position: relative;
+}
+#basket{
+    float: left;
+    width: 30%;
+    background-color: #8BC53E;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+#basket_info{
+    float: left;
+    width: 85%;
+}
+
+#basket_icon{
+    text-align: center;
+    width: 20%;
+    font-size: 27px;
+    margin-left: 8px;
+    float: left;
+    padding-top: 7px;
+    color: white;
+}
+
+#basket_product{
+    float: left;
+    width: auto;
+    padding: 7px;
+    font-size: 13px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#basket_arrow{
+    float: right;
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+    background-color: #75BC00;
+    border-radius: 0 0 5px 0;
+    min-height: 50px;
+    color: white;
+    font-size: 13px;
+}
+
+#basket_arrow:hover{
+    background-color: #46AD27;
+    border-radius: 0 0 5px 0;
+}
+
+/*********************** DOLNA CZĘŚĆ NAGŁÓWKA, TAM GDZIE LOGO I WYSZUKIWARKA ***************************************/
+#shop_logo{
+    padding-right: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#shop_logo img{
+    width: 143px;
+    height: 120px;
+}
+
+#head_logo{
+    float: left;
+    width: 50%;
+}
+#company_logo{
+    font-size: 35px;
+    font-family: 'Happy Monkey', cursive;
+    text-transform: uppercase;
+    color: #64573D;
+    font-weight: bold;
+}
+
+.header #company_logo{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    min-height: 1px;
+    padding-top: 13px;
+}
+
+#search_div{
+    width: 40%;
+    float: right;
+}
+
+.clear_div{
+    clear: both;
+}
+
+#search_ul{
+    float: right;
+    margin: 15px 70px 15px 0;
+}
+#search_div li{
+    float: left;
+    list-style: outside none none;
+}
+
+#search_div li a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #64573D;
+}
+
+#search_div li a:hover{
+    text-decoration: underline;
+}
+
+#search_div #separate {
+    margin: 0 8px;
+    color: #64573D;
+    cursor: default;
+    padding: 10px;
+}
+
+/******************************************* WYSZUKIWARKA ***********************************************************/
+#search_form{
+    background-color: #F2F2F2;
+    padding: 5px;
+}
+
+#text{
+    width: 90%;
+    background-color: white;
+    padding: 13px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    float: left;
+    border: none;
+}
+
+#submit{
+    width: 10%;
+    padding: 13px;
+    float: left;
+    background-color: #BABA92;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#submit:hover{
+    background-color: #C6C68C;
+}
+
+/*************************************************** MENU ***********************************************************/
+.menu{
+    width: 100%;
+}
+
+.menu_main{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.menu_main > li{
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: #A8ED68;
+    color: #64573D;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-top: 1px solid #5CC514;
+    border-bottom: 1px solid #5CC514;
+    border-right: 1px solid #5CC514;
+}
+
+.menu_main li a{
+    text-decoration: none;
+    color: #64573D;
+    display: block;
+    padding: 10px;
+}
+
+.menu_main li a:hover{
+    background-color: #F2F2F2;
+}
+
+.row .menu_main li:first-child{
+    border-left: 1px solid #5CC514;
+}
+
+.submenu{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-right: 1px solid #5CC514;
+    border-left: 1px solid #5CC514;
+    border-bottom: 1px solid #5CC514;
+    width: 1140px;
+}
+
+.submenu ul{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    cursor: default;
+    list-style: outside none none;
+    display: none;
+}
+
+.submenu ul > li {
+    float: left;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    list-style-type: disc;
+}
+.submenu ul > li:hover{
+    text-decoration: underline;
+}
+
+.active_menu{
+    background-color: #F2F2F2 !important;
+    border-bottom: 1px solid #F2F2F2 !important;
+}
+
+/*********************************************** SLIDER ***************************************************************/
+.slider{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    font-weight: bold;
+}
+
+.container_slider{
+    width: 1284px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px auto 10px;
+}
+
+.button_slider{
+    float: left;
+    font-size: 30px;
+    height: 288px;
+    transform: translateY(45%);
+}
+
+.slider .container{
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    width: 1170px;
+}
+
+
+.slider i{
+    cursor: pointer;
+}
+
+.slider img{
+    width: 1140px;
+}
+
+.slider ul{
+    list-style: outside none none;
+    padding: 0;
+    margin: 0;
+}
+
+.slider li{
+    display: none;
+}
+
+.active_slider{
+    display: block !important;
+}
+
+/*********************************************** STOPKA ***************************************************************/
+.footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+#footer_one{
+    float: left;
+    width: 55%;
+}
+
+#footer_two{
+    float: left;
+    width: 25%;
+}
+
+#footer_three{
+    float: left;
+    width: 20%;
+}
+
+#footer_three img{
+    height: 200px;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.footer_nav{
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 25px;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #8BC53E;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.nav_list{
+    margin: 0;
+    padding: 0;
+    list-style: outside none none;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+}
+
+.nav_list li{
+    margin-bottom: 5px;
+}
+
+.copyright{
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+}
+
+.copyright p{
+    float: left;
+}
+
+.copyright p:first-child{
+    margin-right: 15px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #64573D;
+    font-weight: bold;
+}
+
+.copyright a:hover{
+    text-decoration: underline;
+}
+
+.social_media{
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 13px 0 13px 0;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#facebook{
+    background-color: #64A7D1;
+}
+
+#facebook:hover{
+    background-color: #0088cc;
+}
+
+#twitter{
+    background-color: lightskyblue;
+}
+
+#twitter:hover{
+    background-color: deepskyblue;
+}
+
+#youtube{
+    background-color: #FF8B8B;
+}
+
+#youtube:hover{
+    background-color: #E75151;
+}
+
+#footer_two a{
+    text-decoration: none;
+}
+
+/**************************************** PANEL NAWIGACJI STRON ****************************************************/
+.panel{
+    width: 100%;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.panel ul{
+    margin-top: 25px;
+    padding: 0;
+    list-style: outside none none;
+    overflow: auto;
+}
+
+.panel ul > li {
+    font-size: 15px;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    margin-right: 20px;
+}
+
+.home{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.divider{
+    margin-top: 7px;
+    cursor: default;
+}
+
+.panel_name {
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.panel_name a{
+    text-decoration: none;
+    color: #64573D;
+}
+
+.panel_name:hover{
+    text-decoration: underline;
+}
+
+.page_name{
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+}
+
+/**************************************** LOGOWANIE I REJESTRACJA ****************************************************/
+.pg_log_reg{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+}
+
+.pg_log_reg1{
+    width: 70%;
+    float: left;
+    border-right: 2px solid #F2F2F2;
+}
+
+.pg_log_reg2{
+    width: auto;
+    float: left;
+    margin-left: 50px;
+}
+
+.pg_log_reg h2{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.button_log_reg{
+    width: auto;
+    background-color: #8BC53E;
+    color: #ffffff;
+    padding: 10px 35px;
+    font-weight: bold;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.button_disabled{
+    background-color: #F2F2F2 !important;
+}
+
+.pg_log_reg a{
+    text-decoration: none;
+}
+
+.form_log_reg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.error{
+    color: lightcoral;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.good {
+    color: #5CC514;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.input_form{
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    border: 1px solid #F2F2F2;
+    margin-top: 10px;
+}
+
+#rem{
+    padding-top: 2px;
+    height: 20px;
+}
+
+.forgot_password{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form_log_reg .forgot_password .button_log_reg{
+    margin-top: 10px;
+}
+
+/* checkbox w panelu logowania*/
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+#checkbox{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #F2F2F2;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input:checked + #checkbox {
+    background: transparent url("../picture/icon/check.gif") no-repeat;
+    padding: 5px;
+}
+
+/************************************* CONTENT STRONA GŁÓWNA ********************************************************/
+.index_menu{
+    list-style: outside none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #5CC514;
+    height: 45px;
+}
+
+.index_menu li{
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 25%;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    border: 1px solid #F2F2F2;
+}
+
+.index_menu li:first-child{
+    margin-left: 25%;
+}
+
+.index_menu li:hover{
+    color: #5CC514;
+}
+
+.icon-alert{
+    color: lightcoral;
+}
+.icon-star-empty{
+    color: orange;
+}
+
+.active_index{
+    background-color: #ffffff !important;
+    border: 2px solid !important;
+    border-color:  #5CC514 #5CC514 #ffffff !important;
+}
+
+.btn_more_index{
+    width: 100%;
+    text-align: center;
+}
+
+.btn_more_index button{
+    width: 20%;
+    float: none;
+    margin: 15px;
+}
+
+/*************************** WYŚWIETLENIE WSZYSTKICH PRODUKTÓW Z UŻYCIEM AJAX *****************************************/
+.showed_products{
+    margin-bottom: 30px;
+}
+
+.page_product{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+.page_product ul{
+    border: 4px solid white;
+    width: 90%;
+    list-style: outside none;
+    padding: 0;
+    margin: 10px 0 10px 15px;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    font-weight: bold;
+    cursor: pointer;
+}
+.page_product ul:hover{
+    border: 4px solid #F2F2F2;
+}
+
+.page_product li{
+    padding: 3px;
+}
+
+.page_product li img{
+    margin: 10px 0;
+    width: 150px;
+    height: 150px;
+}
+
+.btn_more{
+    width: 100%;
+    text-align: center;
+}
+
+.btn_more button{
+    width: 20%;
+    float: none;
+    margin: 15px;
+}
+
+/************************************* STYLE DO STRON POJEDYŃCZYCH PRODUKTÓW *****************************************/
+h4{
+    color: #5CC514;
+    font-size: 30px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.content_single_product{
+    font-family: 'Lato', sans-serif;
+    color: #64573D;
+    text-align: center;
+}
+
+.top_element_product{
+    padding: 0;
+    overflow: auto;
+}
+
+.top_element_product li{
+    list-style: outside none;
+    float: left;
+    width: 36.7777%;
+    font-size: 15px;
+}
+.top_element_product li img{
+    width: 350px;
+    height: 350px;
+}
+
+.top_element_product li:first-child{
+    width: 33.3333%;
+}
+
+.top_element_product li:last-child{
+    width: 29.893%;
+}
+
+.opinion_box{
+    border: 2px solid #F2F2F2;
+    position: relative;
+    margin-top: 40px;
+}
+
+h5{
+    font-size: 20px;
+    margin: -12.5px 0 0 0;
+    left: 30px;
+    background-color: white;
+    position: absolute;
+    width: 180px;
+    text-transform: uppercase;
+}
+
+.inner_opinion_box{
+    padding: 25px 53px;
+    text-align: left;
+}
+
+.opinion{
+    border-bottom: 3px dashed #F2F2F2;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.comment{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.comment_form{
+    padding-top: 15px;
+}
+
+.comment_form textarea{
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    color: #64573D;
+    font-family: 'Lato', sans-serif;
+}
+
+.comment_form button{
+    margin: 10px 0 0 0 ;
+}
+
+.form_comment{
+    float: left;
+    width: 100%;
+}
+
+.star{
+    float: left;
+    font-size: 25px;
+}
+
+.form_comment .icon-star-empty{
+    color: #BABA92;
+    cursor: pointer;
+}
+
+.star_hover{
+    color: #ffa500 !important;
+}
+
+.star_active{
+    color: #ffa500 !important;
+}
+
+.basket_product{
+    border-left: 2px dashed #F2F2F2;
+    margin-left: 50px;
+    overflow: auto;
+}
+
+.basket_product p{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    border-bottom: 2px dashed #F2F2F2;
+}
+
+.basket_product input{
+    width: 50px;
+    margin: 0;
+}
+
+.div_product_price{
+    padding: 0 0 40px 25px;
+}
+
+.div_product_price:last-child .product_price_quantity{
+    margin-top: 10px;
+}
+
+.div_product_price:last-child .add_to_basket{
+    margin-top: 10px;
+}
+
+.info_quantity{
+    font-size: 12px;
+    text-align: start;
+}
+
+.product_price_quantity{
+    float: left;
+    width: 15%;
+    text-align: start;
+}
+
+.product_price_price{
+    float: left;
+    width: 55%;
+}
+
+.add_to_basket{
+    float: left;
+    width: 25%;
+    background-color: #5CC514;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.disable_btn{
+    background-color: #F2F2F2;
+}
+
+.hv:hover{
+    background-color: #46AD27;
+}
+
+.add_to_basket .icon-basket{
+    font-size: 20px;
+    color: white;
+}
+
+.opin_login{
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+    font-size: 12px;
+}
+
+.opin_time{
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.comment_opinion{
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.rate_opinion .icon-star-empty{
+    color: #BABA92;
+    float: left;
+    font-size: 25px;
+}
+
+.button_comment{
+    width: 110px;
+    background-color: #8BC53E;
+    color: #FFF;
+    padding: 10px 35px;
+    font-weight: bold;
+    border: medium none;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*********************************************** ZARZĄDZANIE *********************************************************/
+.manage{
+    padding: 0;
+    list-style: outside none;
+    height: 33px;
+    font-family: "Lato",sans-serif;
+    font-size: 17px;
+    color: #64573D;
+    font-weight: bold;
+    border-bottom: 1px solid #5CC514;
+}
+
+.manage li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    cursor: pointer;
+}
+
+.manage li:hover{
+    color: #5CC514;
+}
+
+.active_manage{
+    background-color: #ffffff !important;
+    border: 1px solid !important;
+    border-color:  #5CC514 #5CC514 #ffffff !important;
+}
+
+.data_users{
+    padding: 10px 0 0 0;
+    list-style: outside none;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    color: #64573D;
+    height: 35px;
+    border-bottom: 2px dashed #F2F2F2;
+}
+
+.data_users li{
+    float: left;
+    width: 15%;
+    text-align: center;
+    border-right: 2px dashed #F2F2F2;
+}
+
+.data_users li:first-child{
+    width: 5%;
+}
+
+.data_users li:nth-child(5){
+    width: 20%;
+}
+
+.data_users li:last-child{
+    border-right: none;
+}
+
+.edit_user:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.delete_user:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/************** form edit ********************/
+.form_edit{
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    color: #64573D;
+}
